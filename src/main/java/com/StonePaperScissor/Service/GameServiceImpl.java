@@ -72,7 +72,7 @@ public class GameServiceImpl implements GameService {
 		int totalScore = 0;
 		if (!CollectionUtils.isEmpty(player.getRounds())) {
 		    for (Round round : player.getRounds()) {
-				totalScore =+ round.getScore();
+				totalScore += round.getScore();
 		    }
 		}
 		player.setTotalScore(totalScore);
@@ -97,8 +97,7 @@ public class GameServiceImpl implements GameService {
 
 	/**
 	 * Scores are calculated based on the players choice and game rules.
-	 * When a player choice is greater than another player score increases by one,
-	 * if it is less score decreases by one
+	 * When a player choice is greater than another player score increases by one.
 	 * @param players
 	 */
 	private void updatePlayerWithRoundScore(Player player, int roundNumber,  int... oponentsChoice) {
@@ -110,25 +109,19 @@ public class GameServiceImpl implements GameService {
 				for (int oponentChoice : oponentsChoice) {
 					if (3 == oponentChoice) {
 						score++;
-					} else if (2 == oponentChoice) {
-						score--;
-					}
+					} 
 				}
 			} else if (2 == player.getChoice()) {
 				for (int oponentChoice : oponentsChoice) {
 					if (1 == oponentChoice) {
 						score++;
-					} else if (3 == oponentChoice) {
-						score--;
 					}
 				}
 			} else if (3 == player.getChoice()) {
 				for (int oponentChoice : oponentsChoice) {
 					if (2 == oponentChoice) {
 						score++;
-					} else if (1 == oponentChoice) {
-						score--;
-					}
+					} 
 				}
 			} 
 			if (score < 0) {

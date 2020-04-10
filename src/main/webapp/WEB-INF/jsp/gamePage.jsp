@@ -7,30 +7,40 @@
     <head>
         <script src="https://code.jquery.com/jquery-1.10.2.js"
 	         type="text/javascript"></script> 
+	    <link href="css/main.css"
+              rel="stylesheet">
     </head>
-    <body>
+    <body bgcolor="#E6E6FA">
         <h1 align = "center">Lets Play</h1>
         <div id="roundInfo">
             <input id="round-number-hidden" type='hidden' value='1'/>
-            <div id="round-number" align = "center">Round 1</div>
+            <div id="round-number" align = "center" class="header">Round 1</div>
             <input id="player-number-hidden" type='hidden' value='1'/>
-            <div id="player-number" align = "center">Player 1</div>
+            <div id="player-number" align = "center" class="header">Player 1</div>
         </div>
-        <div align = "center">
-            choose your choise.
+        <div align = "center" class="header">
+            choose your choice.
         </div>
-        <div align = "center">
-            <div onclick="updatePlayerChoice(1)">
-                <a>Stone</a>
+        <div>
+            <div class = "card" onclick="updatePlayerChoice(1)">
+                <div class= "container">
+                    <h3 align = "center">Stone</h3>
+                </div>
             </div>
-            <div onclick="updatePlayerChoice(2)">
-                <a>Paper</a>
+            <div class = "card" onclick="updatePlayerChoice(2)">
+                <div class= "container">
+                    <h3 align = "center">Paper</h3>
+                </div>
             </div>
-            <div onclick="updatePlayerChoice(3)">
-                <a>Scissor</a>
+            <div class = "card" onclick="updatePlayerChoice(3)">
+                <div class="container">
+                    <h3 align = "center">Scissor</h3>
+                </div>
             </div>
         </div>
-        <h5 align = "center"><a href="http://localhost:8080/finish">exit</a></h5>
+        <div  align="center" "margin-top: 5%;">
+          <h3><a href="http://localhost:8080/finish">Exit</a></h3>
+        </div>
     </body>
     <script>
         var player1 = {id: '1', name: 'player1'};

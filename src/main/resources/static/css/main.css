@@ -1,0 +1,39 @@
+.card {
+  box-shadow: 0 4px 8px 0;
+  width: 30%;
+  margin-left: 2%;
+  margin-top: 7%;
+  display: inline-block;
+  background: #FFA07A;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid black;
+  align: center;
+}
+
+.button {
+	display: inline;
+}
+
+.header {
+	font-size: large; 
+	font-weight: bold;
+	padding-top: 25px;
+	padding-bottom: 25px; 
+}
