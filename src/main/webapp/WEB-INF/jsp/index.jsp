@@ -5,9 +5,12 @@
 <!DOCTYPE html>
 <html> 
     <body>
-        <h1>Welcome To SPC:</h1>
-         
-        <h4><a href="http://localhost:8080/start">lets Play</a></h4>     
+        <div>
+            <h1 align="center">Welcome To SPC:</h1>
+        </div>
+        <div align="center">
+           <h4><a href="http://localhost:8080/start">lets Play</a></h4>
+        </div>
     </body>
 </html>
 
