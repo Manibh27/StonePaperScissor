@@ -8,19 +8,10 @@ import java.util.List;
  *
  */
 public class Match {
-	private List<Round> rounds;
 	private List<Player> players;
 	private Player winner;
 	
 	//Getters and Setters
-	public List<Round> getRounds() {
-		return rounds;
-	}
-	
-	public void setRounds(List<Round> rounds) {
-		this.rounds = rounds;
-	}
-	
 	public List<Player> getPlayers() {
 		return players;
 	}

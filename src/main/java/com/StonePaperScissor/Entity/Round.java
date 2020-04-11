@@ -10,7 +10,6 @@ import java.util.List;
 public class Round {
 	private int roundNumber;
 	private int score;
-	private List<Player> players;
     
 	//Getters and Setters
     public int getRoundNumber() {
@@ -28,12 +27,4 @@ public class Round {
 	public void setScore(int score) {
 		this.score = score;
 	}
-	
-    public List<Player> getPlayers() {
-		return players;
-	}
-    
-	public void setPlayers(List<Player> players) {
-		this.players = players;
-	} 
 }
