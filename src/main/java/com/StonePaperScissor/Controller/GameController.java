@@ -61,12 +61,12 @@ public class GameController {
 	 * @param response
 	 * @throws IOException
 	 */
-    @RequestMapping(value = Constants.PLAY, method = RequestMethod.GET)  
+    @RequestMapping(value = Constants.PLAY, method = RequestMethod.POST)  
     private void playGame(HttpServletRequest request, HttpServletResponse 
-            response) throws IOException {
-    	JSONObject roundInfo = new JSONObject();
+            response) throws IOException {    	
+    	JSONObject success = gameService.updateRoundInfo(request);
         response.setContentType(Constants.APPLICATION_JSON);
-        response.getWriter().write(roundInfo.toString());
+        response.getWriter().write(success.toString());
     }
     
     /**

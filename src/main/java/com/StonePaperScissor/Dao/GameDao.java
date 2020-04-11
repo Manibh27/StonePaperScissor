@@ -1,7 +1,10 @@
 package com.StonePaperScissor.Dao;
 
+import java.util.List;
+
 import com.StonePaperScissor.Entity.Match;
 import com.StonePaperScissor.Entity.Player;
+import com.StonePaperScissor.Entity.Round;
 
 public interface GameDao {
 	
@@ -12,15 +15,15 @@ public interface GameDao {
 	public Match getMatchResult();
 	
 	/**
-	 * update the player information.
+	 * update the Match after each round.
 	 * @param
-	 *      -player info to be updated.
+	 *      -players info to be updated.
 	 */
-	public void updatePlayerPerRound(Player player);
+	public void updateMatch(List<Player> players);
 	
 	/**
 	 * When a new match is started , new players are initialized.
 	 */
-	public void initializeMatchPlayers();
+	public void initializeMatch();
 
 }

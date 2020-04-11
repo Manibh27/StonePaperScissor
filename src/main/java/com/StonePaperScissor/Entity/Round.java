@@ -1,5 +1,7 @@
 package com.StonePaperScissor.Entity;
 
+import java.util.List;
+
 /**
  * Each round information stored.
  * @author Mani Bharathi.M
@@ -7,20 +9,31 @@ package com.StonePaperScissor.Entity;
  */
 public class Round {
 	private int roundNumber;
-    private int score;
+	private int score;
+	private List<Player> players;
     
-    //Getters and Setters
+	//Getters and Setters
     public int getRoundNumber() {
 		return roundNumber;
 	}
+    
 	public void setRoundNumber(int roundNumber) {
 		this.roundNumber = roundNumber;
 	}
-	public int getScore() {
+	
+    public int getScore() {
 		return score;
 	}
+
 	public void setScore(int score) {
 		this.score = score;
 	}
-   
+	
+    public List<Player> getPlayers() {
+		return players;
+	}
+    
+	public void setPlayers(List<Player> players) {
+		this.players = players;
+	} 
 }

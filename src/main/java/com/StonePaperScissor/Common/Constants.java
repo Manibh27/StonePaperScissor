@@ -18,5 +18,9 @@ public class Constants {
 	public static final String ERROR_PAGE_JSP = "errorPage";
 	public static final String INDEX_JSP = "index";
 	public static final String HOMAE_PAGE = "homePage";
+	public static final String PLAYER_ONE_CHOICE = "playerOneChoice";
+	public static final String PLAYER_TWO_CHOICE = "playerTwoChoice";
+	public static final String PLAYER_THREE_CHOICE = "playerThreeChoice";
+	public static final String PLAYER_FOUR_CHOICE = "playerFourChoice";
 
 }
